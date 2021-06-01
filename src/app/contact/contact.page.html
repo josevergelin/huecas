@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Contacto</ion-title>
+    <img slot="end" width="30" height="30" class="ion-margin-end" src="./assets/images/logo-2.png">
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+
+      <ion-list>
+        <ion-list-header>
+          <h2>José Vergelin</h2>
+        </ion-list-header>
+
+        <ion-item>
+          <img width="80" height="80" class="ion-margin-bottom" src="./assets/images/foto-1.png"><br>
+
+        </ion-item>
+
+        <ion-item>
+          <ion-icon slot="end" name="call-outline"></ion-icon>
+          <ion-label>Teléfono: 099 876 5432</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon slot="end" name="mail-outline"></ion-icon>
+          <ion-label>Email: josevergelin@gmail.com</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon slot="end" name="location-outline"></ion-icon>
+          <ion-label>Ubicación: Quito-Ecuador</ion-label>
+        </ion-item>
+      </ion-list>
+
+
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+
+      <ion-list>
+        <ion-list-header>
+          <h4>Deja tu mensaje</h4>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-label>Nombre:</ion-label>
+          <ion-input placeholder="Ingresa tu nombre y apellido"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Email:</ion-label>
+          <ion-input placeholder="Ingresa tu correo electrónico"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Mensaje:</ion-label>
+          <ion-textarea rows="8" cols="20" placeholder="Dejame tu mensaje, te contestaré tan pronto como me sea posible."></ion-textarea>
+        </ion-item>
+      </ion-list>
+
+      <ion-button expand="block" color="warning">Enviar</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+</ion-content>
+<!-- Footer without a border -->
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <app-main-nav></app-main-nav>
+  </ion-toolbar>
+</ion-footer>

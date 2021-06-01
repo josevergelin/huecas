@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Portfolio</ion-title>
+    <img slot="end" width="30" height="30" class="ion-margin-end" src="./assets/images/logo-2.png">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+        <ion-card *ngFor="let work of works">
+          <img src="./assets/{{work.imageUrl}}" />
+
+          <ion-card-header>
+            <ion-card-subtitle>{{work.area}}</ion-card-subtitle>
+            <ion-card-title color="warning">{{work.title}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            {{work.description}}
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+<!-- Footer without a border -->
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <app-main-nav></app-main-nav>
+  </ion-toolbar>
+</ion-footer>
